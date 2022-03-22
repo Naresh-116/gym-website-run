@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Balsamiq+Sans:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+
+/* CSS RESET */
+
+body{
+    font-family: 'Balsamiq Sans', cursive;
+    color:white;
+    margin:0px;
+    padding:0px;
+    background:url('images/gm.jpg');
+
+    
+}
+
+.left{
+    /* position:absolute; */
+    display:inline-block;
+    /* border: 2px solid red; */
+    position:absolute;
+    left:34px;
+    top:12px;
+
+}
+.left img{
+    width: 130px;
+}
+
+.left div{
+    text-align: bottom;
+    text-align: center;
+}
+.mid{ 
+   
+    /* position:absolute; */
+    display:block;
+    width:40%;
+    /* margin auto mid  */
+    margin:12px auto;
+    /* border: 2px solid blue; */
+}
+
+.right{
+    position:absolute;
+    right:34px;
+    top:12px;
+    display:inline-block;
+
+    /* border: 2px solid green; */
+}
+
+.navbar
+{
+    display:inline-block;
+}
+
+.navbar li
+{
+    color:white;
+    display:inline-block;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar li a{
+    color:white;
+    display:inline-block;
+    padding:34px;
+    text-decoration: none;
+
+}
+
+.navbar li a:hover,.navbar li a.active{
+    color:gray;
+    display:inline-block;
+    padding:34px;
+    text-decoration: underline;
+    
+}
+
+.btn{
+    font-family: 'Balsamiq Sans', cursive;
+    margin:0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border-radius:10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(75, 65, 65);
+}
+
+.container
+{
+     border:2px solid white; 
+    margin: 100px 50px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 10px;
+}
+
+.form-group input{
+    font-family: 'Balsamiq Sans', cursive;
+    display: block;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    width:340px;
+    padding:10px;
+    margin:10px auto;
+    border:2px solid black;
+
+}
+
+.container h1{
+    text-align: center;
+    color: white;
+}
+
+.container button{
+    display:block;
+    margin:auto;
+    width:60%;
+    
+
+}
+
+
+
+
+</style>
+<body>
+    <header class="class">
+    <!-- left class for logo -->
+        <div class="left">
+        
+            <img src="images/db.jpg" alt="">
+            <div>
+                Naresh fitness
+                </div>
+
+        </div>
+   <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness calculator</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+
+        </div>
+
+        <!-- right box for buttons  -->
+        <div class="right">
+<button class="btn">Call us now</button>
+<button class="btn">Email us</button>
+        </div>
+         <div class="container">
+             <h1>Join best Gym of haldwani now</h1>
+             <form action="noaction.php">
+                 <!-- assume all data will go to no action.php -->
+
+                <div class="form-group">
+                   <input type="text" name="" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your gender">
+                 </div>
+                 <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your age">
+                 </div>
+                 <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your locality">
+                 </div>
+                 <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Email-id">
+                 </div>
+                 <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Phone no">
+                 </div>
+
+                 <button class="btn">SUBMIT</button>
+   
+
+             </form>
+
+
+         </div>
+    </header>
+</body>
+</html>
